@@ -15,7 +15,7 @@ public class Jenkins {
 	@Test(priority=1)
 	public void url() {
 		
-		br.firefox(url.url);
+		br.web(url.url);
 		
 	}
 
