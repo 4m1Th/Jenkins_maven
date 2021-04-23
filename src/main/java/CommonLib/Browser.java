@@ -13,20 +13,21 @@ public class Browser {
 	
 	public WebDriver driver;
 	public void web(String URL) {
-//		WebDriverManager.chromedriver().setup();
-//		driver=new ChromeDriver();
-//		driver.navigate().to(URL);
-//		driver.manage().window().maximize();
+		WebDriverManager.firefoxdriver().setup();
+		driver=new FirefoxDriver();
+		driver.navigate().to(URL);
+		driver.manage().window().maximize();
 
-		WebDriverManager.chromedriver().setup();
-        ChromeOptions options = new ChromeOptions(); 
-        options.addArguments("disable-infobars");
-        options.addArguments("--disable-extensions");
-        DesiredCapabilities dc = new DesiredCapabilities();
-        dc.setCapability(ChromeOptions.CAPABILITY, options);
-        driver = new ChromeDriver(options);
-        driver.navigate().to(URL);
-        driver.manage().window().maximize();
+//		WebDriverManager.chromedriver().setup();
+//        ChromeOptions options = new ChromeOptions(); 
+//        options.addArguments("disable-infobars");
+//        options.addArguments("--disable-extensions");
+//        DesiredCapabilities dc = new DesiredCapabilities();
+//        dc.setCapability(ChromeOptions.CAPABILITY, options);
+//        driver = new ChromeDriver(options);
+//        driver.navigate().to(URL);
+//        driver.manage().window().maximize();
+		
 	}
 
 }
