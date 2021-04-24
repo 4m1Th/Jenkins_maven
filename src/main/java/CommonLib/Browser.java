@@ -13,14 +13,14 @@ public class Browser {
 	
 	public WebDriver driver;
 	public void web(String URL) {
-//		WebDriverManager.firefoxdriver().setup();
-//		driver=new FirefoxDriver();
-//		driver.navigate().to(URL);
-//		driver.manage().window().maximize();
-		WebDriverManager.chromedriver().setup();
-		driver=new ChromeDriver();
+		WebDriverManager.firefoxdriver().setup();
+		driver=new FirefoxDriver();
 		driver.navigate().to(URL);
 		driver.manage().window().maximize();
+//		WebDriverManager.chromedriver().setup();
+//		driver=new ChromeDriver();
+//		driver.navigate().to(URL);
+//		driver.manage().window().maximize();
 
 //		WebDriverManager.chromedriver().setup();
 //        ChromeOptions options = new ChromeOptions(); 
