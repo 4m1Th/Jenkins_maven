@@ -13,8 +13,10 @@ public class Browser {
 	
 	public WebDriver driver;
 	public void web(String URL) {
-		WebDriverManager.firefoxdriver().setup();
-		driver=new FirefoxDriver();
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions opt = new ChromeOptions();
+		opt.addArguments("--headless");
+		driver=new ChromeDriver(opt);
 		driver.navigate().to(URL);
 		driver.manage().window().maximize();
 //		WebDriverManager.chromedriver().setup();
